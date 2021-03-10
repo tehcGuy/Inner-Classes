@@ -10,7 +10,7 @@ class Outer {
         private int y = 2;
 
         public void bye() {
-            hello(); //but outer class does not have the access to inner class
+            hello(); //However, outer class does not have the access to inner class
             System.out.println("1. Inner local class wishes you a nice day");
         }
     }
@@ -62,6 +62,5 @@ public class Main {
 
         Outer.NestedStatic stat = new Outer.NestedStatic();
         stat.sayHi();
-
     }
 }
